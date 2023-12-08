@@ -1,0 +1,69 @@
+/* Write your CSS here */
+.mainBoxContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-end;
+}
+@media (min-width: 768px) {
+  .mainBoxContainer {
+    width: 300px;
+    align-self: flex-end;
+  }
+}
+
+.cart-summary-container {
+  width: 200px;
+  align-self: flex-end;
+}
+@media (min-width: 768px) {
+  .cart-summary-container {
+    align-self: flex-end;
+    width: 100%;
+  }
+}
+.order-head {
+  color: #616e7c;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .order-head {
+    font-size: 25px;
+  }
+}
+.amount-span {
+  color: #171f46;
+}
+@media (min-width: 768px) {
+  .amount-span {
+    color: #171f46;
+  }
+}
+.details {
+  color: #616e7c;
+  font-family: 'Roboto';
+  line-height: 1;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .details {
+    font-size: 16px;
+  }
+}
+.checkout-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .checkout-btn {
+    width: 300px;
+    height: 30px;
+    align-self: flex-end;
+    font-size: 20px;
+  }
+}
