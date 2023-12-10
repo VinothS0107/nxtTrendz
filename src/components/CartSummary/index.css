@@ -67,3 +67,105 @@
     font-size: 20px;
   }
 }
+.modal {
+  width: 350px;
+  background-color: #afbbf8;
+}
+@media (min-width: 768px) {
+  .modal {
+    width: 700px;
+    height: 400px;
+    background-color: #afbbf8;
+  }
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #171f46;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.label {
+  font-family: 'Roboto';
+  color: #171f46;
+  font-size: 16px;
+  font-weight: 500;
+}
+.AmountCont {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 0;
+}
+.radioInput {
+  width: 15px;
+  height: 15px;
+}
+.amtHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tHead {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #171f46;
+  font-size: 18px;
+}
+.tData {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #171f46;
+  font-size: 15px;
+}
+.disabledButton {
+  background-color: #75a8fa !important ;
+  color: #616e7c;
+}
+
+@media (min-width: 768px) {
+  .disabledButton {
+    background-color: #75a8fa !important ;
+    color: #616e7c;
+  }
+}
+.placedOrder {
+  color: green;
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  padding: 30px;
+}

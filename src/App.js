@@ -15,6 +15,7 @@ import './App.css'
 class App extends Component {
   state = {
     cartList: [],
+    isSelected: false,
   }
 
   //   TODO: Add your code for remove all cart items, increment cart item quantity, decrement cart item quantity, remove cart item
@@ -78,19 +79,27 @@ class App extends Component {
     })
   }
 
-  render() {
-    const {cartList} = this.state
+  onSelectCheck = () => {
+    this.setState(prev => ({
+      isSelected: !prev.isSelected,
+    }))
+  }
 
+  render() {
+    const {cartList, isSelected, isConfirm} = this.state
     return (
       <CartContext.Provider
         value={{
           cartList,
-
+          isSelected,
+          isConfirm,
           addCartItem: this.addCartItem,
           removeCartItem: this.removeCartItem,
           removeAllCartItems: this.removeAllCartItems,
           incrementCartItemQuantity: this.incrementCartItemQuantity,
           decrementCartItemQuantity: this.decrementCartItemQuantity,
+          onSelectCheck: this.onSelectCheck,
+          onConfirmOrder: this.onConfirmOrder,
         }}
       >
         <Switch>
